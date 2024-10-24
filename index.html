@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portofolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    </head>
+    <body>
+        <!-- Navbar Menu-->
+         <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <span>Soni</span> <!-- Pastikan tidak ada CSS yang menyembunyikan elemen ini -->
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#portfolio">Portfolio</a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburger" onclick="hamburger()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Skills</a>
+                    <a href="#">Service</a>
+                    <a href="#"">Contact</a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
+         </nav>
+         <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-out" data-aos-duration="1500">
+                    <img src="logo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey, I'm<span></span></h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                        Soni<span class="typewriter-text"></span>
+                        <label for=""></label>
+                    </div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">Saya adalah seorang mahasiswa jurusan Sistem Informasi di UPBJJ Medan yang tengah menekuni bidang pengembangan website. Dengan semangat untuk terus belajar dan berkembang, saya telah memulai perjalanan sebagai developer pemula, berfokus pada membangun dan mengoptimalkan website. Meskipun baru memasuki dunia web development, saya memiliki keinginan kuat untuk memberikan solusi kreatif dan fungsional, terutama dalam industri kopi, salah satu proyek yang sedang saya kembangkan.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/hannvtwu" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300" class="icon github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/jihanwo19" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400" class="icon facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/soni-jihan-rianto" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/hannvtwu" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600" class="icon twitter"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                        <button onclick="window.location.href='mailto:sonyjihanrianto@gmail.com'">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+         </section>
+        
+         <!-- about section start -->
+
+         <section class="about" id="about">
+            <div class="content">
+                <div class="tittle" data-aos="fade-up" data-aos-duration="1500"><span>About Me</span></div>
+                <div class="about-details">
+                    <div class="Left">
+                        <img src="logo.jpg" alt="" />
+                    </div>
+                    <div class="right">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="200" data-aos-delay="700">Designing Is My Passion</div>
+                        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">Sebagai seorang mahasiswa Sistem Informasi dengan minat besar dalam desain dan pengembangan website, saya selalu terdorong untuk menciptakan tampilan dan fungsi yang menarik serta intuitif. Menggabungkan kreativitas dengan logika pemrograman, saya mengeksplorasi berbagai teknik dan alat untuk menghasilkan karya yang unik dan fungsional.</p>
+                        <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                            <button>Download CV</button>
+                        </div>
+                    </div>
+            </div>
+         </section>
+
+         <!-- skills section start -->
+          <section class="skills" id="skills">
+            <div class="content">
+                <div class="tittle" data-aos="fade-up" data-aos-duration="1200"><span>My Skills</span></div>
+                <div class="skills-details">
+                    <div class="text">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">Skills Reflects Our Knowledge</div>
+                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Sebagai seorang mahasiswa Sistem Informasi yang terus belajar, saya telah mengasah berbagai keterampilan di bidang teknologi dan pengembangan web. Beberapa keterampilan utama saya meliputi:</p>
+                        <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                            <div class="num">10</div>
+                            <div class="exp">Years Of <br>Experience</div>
+                        </div>
+                    </div>
+                    <div class="boxes">
+                        <div class="box">
+                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">HTML</div>
+                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">90%</div>
+                        </div>
+                        <div class="box">
+                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">CSS</div>
+                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">70%</div>
+                        </div>
+                        <div class="box">
+                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">JavaScript</div>
+                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="650">70%</div>
+                        </div>
+                        <div class="box">
+                            <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">PHP</div>
+                            <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="650">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <!-- service section start -->
+           <section class="service" id="services">
+            <div class="content">
+                <div class="tittle" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
+                <div class="boxes">
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="topic">Web Development</div>
+                        <p>Saya berfokus pada pengembangan website yang responsif dan fungsional, menggunakan teknologi terbaru seperti HTML, CSS, dan JavaScript. Setiap website yang saya buat dirancang untuk memberikan pengalaman pengguna yang optimal dan estetika yang menarik.</p>
+                    </div>
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="topic">Graphic Design</div>
+                        <p>Dengan kemampuan desain grafis, saya menciptakan visual yang menarik dan profesional. Desain saya selalu berusaha menyampaikan pesan yang jelas dan kuat, baik untuk kebutuhan personal maupun bisnis.</p>
+                    </div>
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="topic">Digital Marketing</div>
+                        <p>Menguasai strategi pemasaran digital, saya membantu meningkatkan visibilitas dan pertumbuhan bisnis melalui SEO, media sosial, dan iklan digital. Dengan pendekatan yang terukur, saya bekerja untuk mencapai hasil yang efektif dan efisien.</p>
+                    </div>
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="800">
+                        <div class="icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="topic">Icon Design</div>
+                        <p>Saya merancang ikon yang sederhana namun kuat untuk aplikasi dan website, membantu membuat pengalaman pengguna yang intuitif. Setiap ikon dirancang untuk menyampaikan informasi secara efektif dengan desain yang estetis.</p>
+                    </div>
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
+                        <div class="icon">
+                            <i class="fas fa-camera-retro"></i>
+                        </div>
+                        <div class="topic">Photography</div>
+                        <p>Selain keahlian teknis, saya menangkap momen dengan komposisi yang artistik. Fotografi saya mencerminkan detail yang sering kali terlewatkan, memberikan makna lebih pada setiap gambar yang saya ambil.</p>
+                    </div>
+                    <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1200">
+                        <div class="icon">
+                            <i class="fas fa-tablet-alt"></i>
+                        </div>
+                        <div class="topic">Apps Development</div>
+                        <p>Saya mengembangkan aplikasi mobile dan desktop dengan fokus pada kinerja, efisiensi, dan antarmuka pengguna yang intuitif. Aplikasi yang saya buat selalu dirancang untuk memenuhi kebutuhan spesifik pengguna dan pasar.</p>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+           <!-- contact me section start -->
+            <section class="contact" id="contact">
+                <div class="content">
+                    <div class="tittle" data-aos="fade-up" data-aos-duration="1500"><span>Contact Me</span></div>
+                    <div class="text">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, labore? Sed dicta harum iste excepturi beatae sequi repudiandae dignissimos amet ea quos aut, ratione, labore doloribus voluptatum voluptatibus, error quisquam.</p> -->
+                    <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                        <button onclick="window.location='mailto:sonyjihanrianto@gmail.com'; return false;">Let's Chat</button>
+                    </div>
+             </div>
+            </section>      
+
+            <!-- footer section -->
+             <footer>
+                <div class="text">
+                    <span>Created By <a href="#">SoniJihanRianto</a> | &#169  2024 All Rights Reserved</span>
+                </div>
+             </footer>
+
+             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+             <script>
+               AOS.init();
+             </script>
+
+             <script src="script.js"></script>
+    </body>
+</html>
